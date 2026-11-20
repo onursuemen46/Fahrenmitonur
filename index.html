@@ -79,7 +79,6 @@
     .btn-alert { border-color: var(--alert-red); }
     .btn-alert:hover { background: var(--alert-red); color: #fff; }
 
-    /* AUTH CONTAINER */
     .auth-card {
       max-width: 420px;
       margin: 40px auto;
@@ -92,16 +91,21 @@
     .form-group { margin-bottom: 15px; }
 
     .form-group label {
-      display: block; font-size: 0.8rem; color: var(--text-dim); margin-bottom: 5px;
+      display: block;
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      margin-bottom: 5px;
     }
 
     .form-group input, .form-group select {
-      width: 100%; padding: 10px; background: #090c09;
-      border: 1px solid var(--panel-border); color: var(--text-main);
+      width: 100%;
+      padding: 10px;
+      background: #090c09;
+      border: 1px solid var(--panel-border);
+      color: var(--text-main);
       font-family: 'Share Tech Mono', monospace;
     }
 
-    /* DAY TABS NAVIGATION */
     .day-tabs {
       display: flex;
       gap: 5px;
@@ -137,7 +141,6 @@
       font-weight: bold;
     }
 
-    /* SCHEDULE LAYOUT */
     .day-column {
       background: var(--panel-bg);
       border: 1px solid var(--panel-border);
@@ -214,12 +217,12 @@
     }
 
     .slot-status {
-      font-weight: bold; 
-      cursor: pointer; 
+      font-weight: bold;
+      cursor: pointer;
       padding: 6px 15px;
       background: var(--color-empty);
       color: #ffffff;
-      border: 1px dashed var(--color-empty); 
+      border: 1px dashed var(--color-empty);
       user-select: none;
       font-size: 0.95rem;
       display: flex;
@@ -230,18 +233,62 @@
       max-width: 80%;
     }
 
-    .slot-status.frei { background: var(--color-frei); color: #000000; border: 1px solid var(--color-frei); }
-    .slot-status.gebucht { background: var(--color-gebucht); color: #ffffff; border: 1px solid var(--color-gebucht); }
-    .slot-status.pause { background: var(--color-pause); color: #000000; border: 1px solid var(--color-pause); }
-    .slot-status.wartet { background: #ffffff; color: #000000; border: 1px solid #ffffff; }
-    .slot-status.theorie { background: var(--color-theorie); color: #000000; border: 1px solid var(--color-theorie); }
-    .slot-status.termin { background: var(--color-termin); color: #000000; border: 1px solid var(--color-termin); }
-    .slot-status.belegt { background: var(--color-belegt); color: #ffffff; border: 1px solid var(--color-belegt); }
-    .slot-status.empty { background: var(--color-empty); color: #ffffff; border: 1px dashed var(--color-empty); }
+    .slot-status.frei {
+      background: var(--color-frei);
+      color: #000000;
+      border: 1px solid var(--color-frei);
+    }
+
+    .slot-status.gebucht {
+      background: var(--color-gebucht);
+      color: #ffffff;
+      border: 1px solid var(--color-gebucht);
+    }
+
+    .slot-status.pause {
+      background: var(--color-pause);
+      color: #000000;
+      border: 1px solid var(--color-pause);
+    }
+
+    .slot-status.wartet {
+      background: #ffffff;
+      color: #000000;
+      border: 1px solid #ffffff;
+    }
+
+    .slot-status.theorie {
+      background: var(--color-theorie);
+      color: #000000;
+      border: 1px solid var(--color-theorie);
+    }
+
+    .slot-status.termin {
+      background: var(--color-termin);
+      color: #000000;
+      border: 1px solid var(--color-termin);
+    }
+
+    .slot-status.belegt {
+      background: var(--color-belegt);
+      color: #ffffff;
+      border: 1px solid var(--color-belegt);
+    }
+
+    .slot-status.empty {
+      background: var(--color-empty);
+      color: #ffffff;
+      border: 1px dashed var(--color-empty);
+    }
 
     .slot-type {
-      font-size: 0.75rem; color: var(--text-dim); cursor: pointer;
-      text-decoration: underline; user-select: none; margin-top: 2px; text-align: right;
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      cursor: pointer;
+      text-decoration: underline;
+      user-select: none;
+      margin-top: 2px;
+      text-align: right;
     }
 
     .slot-type-fahrprüfung {
@@ -262,25 +309,39 @@
     .admin-panel {
       background: var(--panel-bg);
       border: 2px solid var(--highlight-yellow);
-      padding: 15px; margin-bottom: 20px;
+      padding: 15px;
+      margin-bottom: 20px;
     }
 
-    /* MODAL */
     .modal {
-      display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(0,0,0,0.85); justify-content: center; align-items: center; z-index: 1000;
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.85);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
     }
 
     .modal-content {
-      background: var(--panel-bg); border: 2px solid var(--highlight-yellow);
-      padding: 20px; width: 95%; max-width: 550px;
+      background: var(--panel-bg);
+      border: 2px solid var(--highlight-yellow);
+      padding: 20px;
+      width: 95%;
+      max-width: 550px;
     }
 
     .modal-actions {
-      display: flex; gap: 6px; flex-wrap: wrap; justify-content: space-between; margin-top: 15px;
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 15px;
     }
 
-    /* TIME PICKER CLOCK MODAL */
     .time-picker-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -372,19 +433,19 @@
       <p style="font-size:0.8rem; color:var(--text-dim); margin-bottom:15px;">
         Fahrschüler: Vom Fahrlehrer angelegten Namen eingeben. Bei der Erst-Anmeldung vergibst du deine eigene PIN.
       </p>
-      
+
       <div class="form-group">
         <label>VOR- & NACHNAME</label>
         <input type="text" id="login-id" placeholder="z. B. Max Mustermann">
       </div>
-      
+
       <div class="form-group" id="pin-group">
         <label>PIN (4-STELLIG)</label>
         <input type="password" id="login-pin" placeholder="****" maxlength="4">
       </div>
 
       <button id="login-btn" class="btn-mil" style="width: 100%;">EINLOGGEN</button>
-      
+
       <div id="first-login-notice" class="hidden" style="margin-top: 15px; border-top: 1px solid var(--panel-border); padding-top: 10px;">
         <p style="font-size: 0.75rem; color: var(--highlight-yellow);">Willkommen! Bitte vergib bei deiner ersten Anmeldung deine eigene 4-stellige PIN:</p>
         <div class="form-group" style="margin-top: 10px;">
@@ -398,7 +459,6 @@
   <!-- MAIN APP SECTION -->
   <div id="app-screen" class="hidden">
 
-    <!-- ADMIN PANEL -->
     <div id="admin-panel" class="admin-panel hidden">
       <h3>COMMANDER PANEL (FAHRLEHRER)</h3>
       <div style="display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap;">
@@ -408,10 +468,7 @@
       </div>
     </div>
 
-    <!-- WOCHENTAG-REGISTERKARTEN (TABS) -->
     <div class="day-tabs" id="day-tabs-container"></div>
-
-    <!-- STUNDENPLAN CONTAINER FÜR DEN AKTIVEN TAG -->
     <div id="schedule-container"></div>
   </div>
 
@@ -419,11 +476,12 @@
   <div id="booking-modal" class="modal">
     <div class="modal-content">
       <h3 id="modal-title">FAHRSTUNDE BUCHEN / VERGEBEN</h3>
+
       <div class="form-group" id="student-select-group">
         <label>FAHRSCHÜLER WÄHLEN</label>
         <select id="modal-student-select"></select>
       </div>
-      
+
       <div class="form-group" id="lesson-type-group">
         <label>FAHRTSTUNDEN-TYP WÄHLEN</label>
         <select id="modal-lesson-type-select">
@@ -452,6 +510,7 @@
           <option value="Zuhause">Zuhause</option>
         </select>
       </div>
+
       <div class="modal-actions">
         <button id="modal-free-btn" class="btn-mil hidden" style="border-color: var(--color-frei);">frei</button>
         <button id="modal-termin-btn" class="btn-mil hidden" style="border-color: var(--color-termin);">Termin</button>
@@ -469,7 +528,7 @@
     <div class="modal-content" style="max-width: 480px;">
       <h3>ZEITSPANNE EINSTELLEN</h3>
       <p style="font-size: 0.8rem; color: var(--text-dim); margin-bottom: 10px;" id="time-clock-subtitle"></p>
-      
+
       <div class="time-picker-grid">
         <div class="time-picker-column">
           <h4>STARTUHRZEIT</h4>
@@ -519,109 +578,56 @@
     const app = initializeApp(firebaseConfig);
     const db = getDatabase(app);
 
-    const DEFAULT_TIME_SLOTS_STANDARD = [
-      { id: "s1", time: "06:00 - 07:30", duration: 90 },
-      { id: "s2", time: "07:30 - 09:00", duration: 90 },
-      { id: "s3", time: "09:15 - 10:45", duration: 90 },
-      { id: "s4", time: "10:45 - 12:15", duration: 90 },
-      { id: "s5", time: "12:15 - 13:15", duration: 60 },
-      { id: "s6", time: "13:15 - 14:45", duration: 90 },
-      { id: "s7", time: "14:45 - 16:15", duration: 90 },
-      { id: "s8", time: "16:15 - 17:45", duration: 90 },
-      { id: "s9", time: "17:45 - 18:00", duration: 15 },
-      { id: "s10", time: "18:00 - 19:30", duration: 90 },
-      { id: "s11", time: "19:30 - 21:00", duration: 90 },
-      { id: "s12", time: "21:00 - 22:30", duration: 90 },
-      { id: "s13", time: "22:30 - 23:15", duration: 45 }
-    ];
-
-    const DEFAULT_TIME_SLOTS_FREITAG = [
-      { id: "s1", time: "06:00 - 07:30", duration: 90 },
-      { id: "s2", time: "07:30 - 09:00", duration: 90 },
-      { id: "s3", time: "09:00 - 10:30", duration: 90 },
-      { id: "s4", time: "10:30 - 11:00", duration: 30 },
-      { id: "s5", time: "11:00 - 12:30", duration: 90 },
-      { id: "s6", time: "12:30 - 14:00", duration: 90 },
-      { id: "s7", time: "14:00 - 15:30", duration: 90 },
-      { id: "s8", time: "16:15 - 17:45", duration: 90 },
-      { id: "s9", time: "17:45 - 18:00", duration: 15 },
-      { id: "s10", time: "18:00 - 19:30", duration: 90 },
-      { id: "s11", time: "19:30 - 21:00", duration: 90 },
-      { id: "s12", time: "21:00 - 22:30", duration: 90 }
-    ];
-
-    const DEFAULT_WEEK_SCHEDULE = {
-      "Montag_s1": { status: "-", type: "Übungsfahrt", location: "" },
-      "Montag_s2": { status: "Termin", type: "Termin", location: "" },
-      "Montag_s3": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Montag_s4": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Montag_s5": { status: "Pause", type: "Übungsfahrt", location: "" },
-      "Montag_s6": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Montag_s7": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Montag_s8": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Montag_s9": { status: "Pause", type: "Übungsfahrt", location: "" },
-      "Montag_s10": { status: "Theorieunterricht", type: "Übungsfahrt", location: "" },
-      "Montag_s11": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Montag_s12": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Montag_s13": { status: "frei", type: "Übungsfahrt", location: "" },
-
-      "Dienstag_s1": { status: "-", type: "Übungsfahrt", location: "" },
-      "Dienstag_s2": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Dienstag_s3": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Dienstag_s4": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Dienstag_s5": { status: "Pause", type: "Übungsfahrt", location: "" },
-      "Dienstag_s6": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Dienstag_s7": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Dienstag_s8": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Dienstag_s9": { status: "Pause", type: "Übungsfahrt", location: "" },
-      "Dienstag_s10": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Dienstag_s11": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Dienstag_s12": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Dienstag_s13": { status: "frei", type: "Übungsfahrt", location: "" },
-
-      "Mittwoch_s1": { status: "-", type: "Übungsfahrt", location: "" },
-      "Mittwoch_s2": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Mittwoch_s3": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Mittwoch_s4": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Mittwoch_s5": { status: "Pause", type: "Übungsfahrt", location: "" },
-      "Mittwoch_s6": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Mittwoch_s7": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Mittwoch_s8": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Mittwoch_s9": { status: "Pause", type: "Übungsfahrt", location: "" },
-      "Mittwoch_s10": { status: "Theorieunterricht", type: "Übungsfahrt", location: "" },
-      "Mittwoch_s11": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Mittwoch_s12": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Mittwoch_s13": { status: "frei", type: "Übungsfahrt", location: "" },
-
-      "Donnerstag_s1": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Donnerstag_s2": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Donnerstag_s3": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Donnerstag_s4": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Donnerstag_s5": { status: "Pause", type: "Übungsfahrt", location: "" },
-      "Donnerstag_s6": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Donnerstag_s7": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Donnerstag_s8": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Donnerstag_s9": { status: "Pause", type: "Übungsfahrt", location: "" },
-      "Donnerstag_s10": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Donnerstag_s11": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Donnerstag_s12": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Donnerstag_s13": { status: "frei", type: "Übungsfahrt", location: "" },
-
-      "Freitag_s1": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Freitag_s2": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Freitag_s3": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Freitag_s4": { status: "Pause", type: "Übungsfahrt", location: "" },
-      "Freitag_s5": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Freitag_s6": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Freitag_s7": { status: "frei", type: "Übungsfahrt", location: "" },
-      "Freitag_s8": { status: "-", type: "Übungsfahrt", location: "" },
-      "Freitag_s9": { status: "-", type: "Übungsfahrt", location: "" },
-      "Freitag_s10": { status: "-", type: "Übungsfahrt", location: "" },
-      "Freitag_s11": { status: "-", type: "Übungsfahrt", location: "" },
-      "Freitag_s12": { status: "-", type: "Übungsfahrt", location: "" }
-    };
+    // DSTT-Standard
+    // 07:00 Uhr Beginn, Fahrblöcke 90 Minuten.
+    // 17:30-18:00 Uhr Pause.
+    // Montag bis Donnerstag 18:00-19:30 Uhr Theorieunterricht.
+    // Der unvollständige Restblock bis 23:00 Uhr wird weggelassen.
 
     const DAYS = ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"];
+
+    const DEFAULT_TIME_SLOTS_STANDARD = [
+      { id: "s1", time: "07:00 - 08:30", duration: 90 },
+      { id: "s2", time: "08:30 - 10:00", duration: 90 },
+      { id: "s3", time: "10:00 - 11:30", duration: 90 },
+      { id: "s4", time: "11:30 - 13:00", duration: 90 },
+      { id: "s5", time: "13:00 - 14:30", duration: 90 },
+      { id: "s6", time: "14:30 - 16:00", duration: 90 },
+      { id: "s7", time: "16:00 - 17:30", duration: 90 },
+      { id: "s8", time: "17:30 - 18:00", duration: 30 },
+      { id: "s9", time: "18:00 - 19:30", duration: 90 },
+      { id: "s10", time: "19:30 - 21:00", duration: 90 },
+      { id: "s11", time: "21:00 - 22:30", duration: 90 }
+    ];
+
+    const DEFAULT_TIME_SLOTS_FREITAG = DEFAULT_TIME_SLOTS_STANDARD;
+
+    function createDefaultWeekSchedule() {
+      const schedule = {};
+
+      DAYS.forEach(day => {
+        DEFAULT_TIME_SLOTS_STANDARD.forEach(slot => {
+          const isTheory =
+            ["Montag", "Dienstag", "Mittwoch", "Donnerstag"].includes(day)
+            && slot.time === "18:00 - 19:30";
+
+          const isBreak = slot.time === "17:30 - 18:00";
+
+          schedule[`${day}_${slot.id}`] = {
+            status: isTheory
+              ? "Theorieunterricht"
+              : (isBreak ? "Pause" : "-"),
+            type: "Übungsfahrt",
+            location: ""
+          };
+        });
+      });
+
+      return schedule;
+    }
+
+    const DEFAULT_WEEK_SCHEDULE = createDefaultWeekSchedule();
+
     let activeDay = "Montag";
 
     let currentUser = localStorage.getItem('hq_current_user') || null;
@@ -634,9 +640,11 @@
       if (customTimeSlots && customTimeSlots[`ZEITEN_${day}`]) {
         return customTimeSlots[`ZEITEN_${day}`];
       }
+
       if (day === "Freitag") {
         return DEFAULT_TIME_SLOTS_FREITAG;
       }
+
       return DEFAULT_TIME_SLOTS_STANDARD;
     }
 
@@ -647,6 +655,7 @@
       const parseMinutes = (str) => {
         const match = str.trim().match(/^(\d{1,2}):(\d{2})$/);
         if (!match) return null;
+
         return parseInt(match[1], 10) * 60 + parseInt(match[2], 10);
       };
 
@@ -657,6 +666,7 @@
 
       let diff = end - start;
       if (diff <= 0) diff += 24 * 60;
+
       return diff;
     }
 
@@ -667,9 +677,11 @@
 
     onValue(ref(db, "wochenplan/"), (snapshot) => {
       weekData = snapshot.val() || {};
+
       if (!weekData || Object.keys(weekData).length === 0) {
         weekData = DEFAULT_WEEK_SCHEDULE;
       }
+
       if (currentUser) renderSchedule();
     });
 
@@ -699,7 +711,9 @@
         return;
       }
 
-      const userEntry = Object.entries(dbUsers).find(([id, s]) => s.name && s.name.toLowerCase() === inputId.toLowerCase());
+      const userEntry = Object.entries(dbUsers).find(([id, s]) =>
+        s.name && s.name.toLowerCase() === inputId.toLowerCase()
+      );
 
       if (!userEntry) {
         alert("Du wurdest noch nicht vom Fahrlehrer im System angelegt!");
@@ -734,10 +748,13 @@
         return;
       }
 
-      const userEntry = Object.entries(dbUsers).find(([id, s]) => s.name && s.name.toLowerCase() === inputId.toLowerCase());
+      const userEntry = Object.entries(dbUsers).find(([id, s]) =>
+        s.name && s.name.toLowerCase() === inputId.toLowerCase()
+      );
 
       if (userEntry) {
         const [firebaseKey, studentData] = userEntry;
+
         update(ref(db, `schueler/${firebaseKey}`), { pin: newPin })
           .then(() => {
             userRole = "student";
@@ -747,6 +764,7 @@
             document.getElementById('first-login-notice').classList.add('hidden');
             document.getElementById('login-btn').classList.remove('hidden');
             document.getElementById('pin-group').classList.remove('hidden');
+
             alert("PIN erfolgreich gespeichert!");
             initApp();
           });
@@ -762,7 +780,8 @@
       document.getElementById('auth-section').classList.add('hidden');
       document.getElementById('app-screen').classList.remove('hidden');
       document.getElementById('logout-btn').classList.remove('hidden');
-      document.getElementById('user-info').innerText = `${currentUser} [${userRole.toUpperCase()}]`;
+      document.getElementById('user-info').innerText =
+        `${currentUser} [${userRole.toUpperCase()}]`;
 
       if (userRole === "admin") {
         document.getElementById('admin-panel').classList.remove('hidden');
@@ -780,25 +799,33 @@
         return;
       }
 
-      const exists = Object.values(dbUsers).some(s => s.name && s.name.toLowerCase() === name.toLowerCase());
+      const exists = Object.values(dbUsers).some(s =>
+        s.name && s.name.toLowerCase() === name.toLowerCase()
+      );
 
       if (!exists) {
         const newRef = push(ref(db, "schueler/"));
-        set(newRef, { name: name, pin: null, erstellt: new Date().toISOString() })
-          .then(() => {
-            alert(`Fahrschüler '${name}' in der Datenbank angelegt! Er kann sich jetzt anmelden.`);
-            document.getElementById('new-student-name').value = "";
-          });
+
+        set(newRef, {
+          name: name,
+          pin: null,
+          erstellt: new Date().toISOString()
+        }).then(() => {
+          alert(`Fahrschüler '${name}' in der Datenbank angelegt! Er kann sich jetzt anmelden.`);
+          document.getElementById('new-student-name').value = "";
+        });
       } else {
         alert("Dieser Fahrschüler existiert bereits!");
       }
     });
 
+    // DSTT zurücksetzen: individuelle Zeiten und alte Einträge löschen,
+    // anschließend den neuen Standardplan in Firebase speichern.
     document.getElementById('reset-times-btn').addEventListener('click', () => {
       if (confirm("Möchtest du alle Zeiten und Eintragungen wirklich auf die DSTT-Standardeinteilung zurücksetzen?")) {
         Promise.all([
           remove(ref(db, "wochenstruktur/")),
-          set(ref(db, "wochenplan/"), DEFAULT_WEEK_SCHEDULE)
+          set(ref(db, "wochenplan/"), createDefaultWeekSchedule())
         ])
           .then(() => {
             alert("Zeiten und Eintragungen wurden erfolgreich auf die DSTT-Standardwerte zurückgesetzt!");
@@ -812,8 +839,7 @@
     function loadStudentList() {
       const select = document.getElementById('modal-student-select');
       select.innerHTML = "";
-      
-      // Fahrschüler filtern, Namen extrahieren und alphabetisch sortieren (A-Z)
+
       const studentNames = Object.values(dbUsers)
         .map(student => student.name)
         .filter(name => name)
@@ -835,10 +861,12 @@
         const tabBtn = document.createElement('button');
         tabBtn.className = `day-tab-btn ${day === activeDay ? 'active' : ''}`;
         tabBtn.innerText = day;
+
         tabBtn.onclick = () => {
           activeDay = day;
           renderSchedule();
         };
+
         tabsContainer.appendChild(tabBtn);
       });
 
@@ -855,31 +883,61 @@
 
       daySlots.forEach(slot => {
         const slotKey = `${activeDay}_${slot.id}`;
-        const slotState = weekData[slotKey] || { status: "-", type: "Übungsfahrt", location: "" };
+        const slotState = weekData[slotKey] || {
+          status: "-",
+          type: "Übungsfahrt",
+          location: ""
+        };
 
-        if (slotState.status === "frei") freeMinutes += slot.duration;
-        if (slotState.status !== "-" && slotState.status !== "frei" && !slotState.status.includes("(wartet)") && slotState.status !== "Theorieunterricht" && slotState.status !== "Pause" && slotState.status !== "Termin") {
+        if (slotState.status === "frei") {
+          freeMinutes += slot.duration;
+        }
+
+        if (
+          slotState.status !== "-"
+          && slotState.status !== "frei"
+          && !slotState.status.includes("(wartet)")
+          && slotState.status !== "Theorieunterricht"
+          && slotState.status !== "Pause"
+          && slotState.status !== "Termin"
+        ) {
           bookedMinutes += slot.duration;
         }
       });
 
-      // Wenn gebuchte Minuten > 495, wird die Textfarbe rot (#ff3333 / var(--alert-red)), ansonsten die gewohnte Grünfarbe (#6ba368)
-      const bookedColor = bookedMinutes > 495 ? "var(--alert-red)" : "#6ba368";
+      const bookedColor = bookedMinutes > 495
+        ? "var(--alert-red)"
+        : "#6ba368";
 
-      let headerHtml = `<span>Frei: <b style="color:var(--color-frei)">${freeMinutes}m</b></span><span>Stundenplan // ${activeDay}</span><span>Gebucht: <b style="color:${bookedColor}">${bookedMinutes}m</b></span>`;
+      let headerHtml = `
+        <span>Frei: <b style="color:var(--color-frei)">${freeMinutes}m</b></span>
+        <span>Stundenplan // ${activeDay}</span>
+        <span>Gebucht: <b style="color:${bookedColor}">${bookedMinutes}m</b></span>
+      `;
 
       let html = `<div class="day-header">${headerHtml}</div><div class="slots-grid">`;
 
       daySlots.forEach(slot => {
         const slotKey = `${activeDay}_${slot.id}`;
-        const slotState = weekData[slotKey] || { status: "-", type: "Übungsfahrt", location: "" };
+        const slotState = weekData[slotKey] || {
+          status: "-",
+          type: "Übungsfahrt",
+          location: ""
+        };
 
         let displayStatus = slotState.status;
         let isOwnBooking = false;
 
         if (userRole === "student") {
-          if (slotState.status !== "-" && slotState.status !== "frei" && slotState.status !== "Theorieunterricht" && slotState.status !== "Pause" && slotState.status !== "Termin") {
+          if (
+            slotState.status !== "-"
+            && slotState.status !== "frei"
+            && slotState.status !== "Theorieunterricht"
+            && slotState.status !== "Pause"
+            && slotState.status !== "Termin"
+          ) {
             const cleanStatus = slotState.status.replace(" (wartet)", "").trim();
+
             if (cleanStatus.toLowerCase() === currentUser.toLowerCase()) {
               isOwnBooking = true;
               displayStatus = slotState.status;
@@ -896,36 +954,63 @@
         const isTermin = displayStatus === "Termin";
         const isBelegt = displayStatus === "belegt";
         const isEmpty = displayStatus === "-";
-        const isGebucht = !isFrei && !isPause && !isWartet && !isTheorie && !isTermin && !isBelegt && !isEmpty;
 
-        const rawType = slotState.type ? slotState.type.trim() : "Übungsfahrt";
+        const isGebucht =
+          !isFrei && !isPause && !isWartet && !isTheorie
+          && !isTermin && !isBelegt && !isEmpty;
+
+        const rawType = slotState.type
+          ? slotState.type.trim()
+          : "Übungsfahrt";
 
         html += `
           <div class="slot-card">
             <div class="slot-left">
               ${userRole === "admin" ? `
-                <div class="slot-time-clickable" onclick="openTimeClockModal('${activeDay}', '${slot.id}', '${slot.time}')">${slot.time}</div>
+                <div class="slot-time-clickable"
+                  onclick="openTimeClockModal('${activeDay}', '${slot.id}', '${slot.time}')">
+                  ${slot.time}
+                </div>
               ` : `
                 <div class="slot-time-static">${slot.time}</div>
               `}
             </div>
-            
+
             <div class="slot-center">
-              <div class="slot-status ${isFrei ? 'frei' : ''} ${isGebucht ? 'gebucht' : ''} ${isPause ? 'pause' : ''} ${isWartet ? 'wartet' : ''} ${isTheorie ? 'theorie' : ''} ${isTermin ? 'termin' : ''} ${isBelegt ? 'belegt' : ''} ${isEmpty ? 'empty' : ''}" onclick="handleStatusClick('${activeDay}', '${slot.id}', '${slotState.status}')">
+              <div class="slot-status
+                ${isFrei ? 'frei' : ''}
+                ${isGebucht ? 'gebucht' : ''}
+                ${isPause ? 'pause' : ''}
+                ${isWartet ? 'wartet' : ''}
+                ${isTheorie ? 'theorie' : ''}
+                ${isTermin ? 'termin' : ''}
+                ${isBelegt ? 'belegt' : ''}
+                ${isEmpty ? 'empty' : ''}"
+                onclick="handleStatusClick('${activeDay}', '${slot.id}', '${slotState.status}')">
                 ${displayStatus}
               </div>
-              ${(userRole === "admin" || isOwnBooking) && slotState.location ? `<div style="font-size:0.75rem; color:var(--highlight-yellow); text-align:center; margin-top:2px;">📍 ${slotState.location}</div>` : ''}
+
+              ${(userRole === "admin" || isOwnBooking) && slotState.location
+                ? `<div style="font-size:0.75rem; color:var(--highlight-yellow); text-align:center; margin-top:2px;">📍 ${slotState.location}</div>`
+                : ''}
             </div>
 
             <div class="slot-right">
               <div>${slot.duration} Min.</div>
-              ${slotState.status !== "-" && slotState.status !== "Theorieunterricht" && slotState.status !== "Termin" && (userRole === "admin" || isOwnBooking) ? `
-                <div class="slot-type ${rawType === 'Fahrprüfung' ? 'slot-type-fahrprüfung' : ''}" onclick="cycleType('${activeDay}', '${slot.id}')">
-                  ${rawType}
-                </div>
-              ` : ''}
+              ${slotState.status !== "-"
+                && slotState.status !== "Theorieunterricht"
+                && slotState.status !== "Termin"
+                && (userRole === "admin" || isOwnBooking)
+                ? `
+                  <div class="slot-type ${rawType === 'Fahrprüfung' ? 'slot-type-fahrprüfung' : ''}"
+                    onclick="cycleType('${activeDay}', '${slot.id}')">
+                    ${rawType}
+                  </div>
+                `
+                : ''}
             </div>
-          </div>`;
+          </div>
+        `;
       });
 
       html += `</div>`;
@@ -936,11 +1021,12 @@
 
     let activeTimeDay = null;
     let activeTimeSlotId = null;
-    let selectedStartTime = "08:00";
-    let selectedEndTime = "09:30";
+    let selectedStartTime = "07:00";
+    let selectedEndTime = "08:30";
 
     const TIME_OPTIONS = [];
-    for (let h = 5; h <= 23; h++) {
+
+    for (let h = 7; h <= 23; h++) {
       for (let m = 0; m < 60; m += 5) {
         const hh = String(h).padStart(2, '0');
         const mm = String(m).padStart(2, '0');
@@ -950,14 +1036,18 @@
 
     window.openTimeClockModal = (day, slotId, currentTimeRange) => {
       if (userRole !== "admin") return;
+
       activeTimeDay = day;
       activeTimeSlotId = slotId;
 
       const parts = currentTimeRange.split('-').map(s => s.trim());
-      selectedStartTime = parts[0] || "08:00";
-      selectedEndTime = parts[1] || "09:30";
 
-      document.getElementById('time-clock-subtitle').innerText = `${day} // Slot ${slotId.toUpperCase()}`;
+      selectedStartTime = parts[0] || "07:00";
+      selectedEndTime = parts[1] || "08:30";
+
+      document.getElementById('time-clock-subtitle').innerText =
+        `${day} // Slot ${slotId.toUpperCase()}`;
+
       buildTimeSelectors();
       document.getElementById('time-clock-modal').style.display = 'flex';
     };
@@ -965,6 +1055,7 @@
     function buildTimeSelectors() {
       const startBox = document.getElementById('start-time-scroll');
       const endBox = document.getElementById('end-time-scroll');
+
       startBox.innerHTML = "";
       endBox.innerHTML = "";
 
@@ -972,31 +1063,42 @@
         const btnStart = document.createElement('button');
         btnStart.className = `time-option-btn ${time === selectedStartTime ? 'selected' : ''}`;
         btnStart.innerText = time;
+
         btnStart.onclick = () => {
           selectedStartTime = time;
           highlightSelectedTimes();
         };
+
         startBox.appendChild(btnStart);
 
         const btnEnd = document.createElement('button');
         btnEnd.className = `time-option-btn ${time === selectedEndTime ? 'selected' : ''}`;
         btnEnd.innerText = time;
+
         btnEnd.onclick = () => {
           selectedEndTime = time;
           highlightSelectedTimes();
         };
+
         endBox.appendChild(btnEnd);
       });
     }
 
     function highlightSelectedTimes() {
       document.querySelectorAll('#start-time-scroll .time-option-btn').forEach(btn => {
-        if (btn.innerText === selectedStartTime) btn.classList.add('selected');
-        else btn.classList.remove('selected');
+        if (btn.innerText === selectedStartTime) {
+          btn.classList.add('selected');
+        } else {
+          btn.classList.remove('selected');
+        }
       });
+
       document.querySelectorAll('#end-time-scroll .time-option-btn').forEach(btn => {
-        if (btn.innerText === selectedEndTime) btn.classList.add('selected');
-        else btn.classList.remove('selected');
+        if (btn.innerText === selectedEndTime) {
+          btn.classList.add('selected');
+        } else {
+          btn.classList.remove('selected');
+        }
       });
     }
 
@@ -1008,7 +1110,9 @@
       const eh = Math.floor(endTotalMins / 60) % 24;
       const em = endTotalMins % 60;
 
-      selectedEndTime = `${String(eh).padStart(2, '0')}:${String(em).padStart(2, '0')}`;
+      selectedEndTime =
+        `${String(eh).padStart(2, '0')}:${String(em).padStart(2, '0')}`;
+
       highlightSelectedTimes();
     };
 
@@ -1045,8 +1149,9 @@
 
         if (slotIdx !== -1) {
           daySlots.splice(slotIdx, 1);
-          
+
           let updateObj = {};
+
           if (daySlots.length === 0) {
             updateObj[`ZEITEN_${activeTimeDay}`] = null;
           } else {
@@ -1082,9 +1187,10 @@
 
     window.cycleType = (day, slotId) => {
       if (userRole !== "admin") return;
+
       const slotKey = `${day}_${slotId}`;
       const slot = weekData[slotKey] || {};
-      
+
       let currentType = slot.type ? slot.type.trim() : "Übungsfahrt";
       let nextType = "Übungsfahrt";
 
@@ -1095,12 +1201,16 @@
       else if (currentType === "Fahrprüfung") nextType = "Schaltwagen";
       else if (currentType === "Schaltwagen") nextType = "Termin";
       else nextType = "Übungsfahrt";
-      
+
       updateSlot(slotKey, { type: nextType });
     };
 
     function updateSlot(slotKey, data) {
-      const updated = { ...(weekData[slotKey] || { type: "Übungsfahrt" }), ...data };
+      const updated = {
+        ...(weekData[slotKey] || { type: "Übungsfahrt" }),
+        ...data
+      };
+
       set(ref(db, `wochenplan/${slotKey}`), updated);
     }
 
@@ -1108,6 +1218,7 @@
 
     function openBookingModal(day, slotId) {
       currentTargetSlot = `${day}_${slotId}`;
+
       document.getElementById('student-select-group').classList.remove('hidden');
       document.getElementById('lesson-type-group').classList.remove('hidden');
       document.getElementById('modal-termin-btn').classList.remove('hidden');
@@ -1125,14 +1236,20 @@
         studentSelect.value = slotState.status.replace(" (wartet)", "").trim();
       }
 
-      lessonTypeSelect.value = slotState.type ? slotState.type.trim() : "Übungsfahrt";
-      if (slotState.location) locationSelect.value = slotState.location;
+      lessonTypeSelect.value = slotState.type
+        ? slotState.type.trim()
+        : "Übungsfahrt";
+
+      if (slotState.location) {
+        locationSelect.value = slotState.location;
+      }
 
       document.getElementById('booking-modal').style.display = 'flex';
     }
 
     function openStudentRequestModal(day, slotId) {
       currentTargetSlot = `${day}_${slotId}`;
+
       document.getElementById('student-select-group').classList.add('hidden');
       document.getElementById('lesson-type-group').classList.add('hidden');
       document.getElementById('modal-termin-btn').classList.add('hidden');
@@ -1140,6 +1257,7 @@
       document.getElementById('modal-pause-btn').classList.add('hidden');
       document.getElementById('modal-reset-btn').classList.add('hidden');
       document.getElementById('modal-free-btn').classList.add('hidden');
+
       document.getElementById('booking-modal').style.display = 'flex';
     }
 
@@ -1149,40 +1267,74 @@
 
       if (userRole === "admin") {
         const studentName = document.getElementById('modal-student-select').value;
+
         if (!studentName) {
           alert("Bitte wählen Sie einen Fahrschüler aus!");
           return;
         }
-        updateSlot(currentTargetSlot, { status: studentName, location: location, type: lessonType });
+
+        updateSlot(currentTargetSlot, {
+          status: studentName,
+          location: location,
+          type: lessonType
+        });
       } else {
-        updateSlot(currentTargetSlot, { status: `${currentUser} (wartet)`, location: location });
+        updateSlot(currentTargetSlot, {
+          status: `${currentUser} (wartet)`,
+          location: location
+        });
       }
 
       document.getElementById('booking-modal').style.display = 'none';
     };
 
     document.getElementById('modal-termin-btn').onclick = () => {
-      updateSlot(currentTargetSlot, { status: "Termin", location: "", type: "Termin" });
+      updateSlot(currentTargetSlot, {
+        status: "Termin",
+        location: "",
+        type: "Termin"
+      });
+
       document.getElementById('booking-modal').style.display = 'none';
     };
 
     document.getElementById('modal-theorie-btn').onclick = () => {
-      updateSlot(currentTargetSlot, { status: "Theorieunterricht", location: "", type: "Übungsfahrt" });
+      updateSlot(currentTargetSlot, {
+        status: "Theorieunterricht",
+        location: "",
+        type: "Übungsfahrt"
+      });
+
       document.getElementById('booking-modal').style.display = 'none';
     };
 
     document.getElementById('modal-pause-btn').onclick = () => {
-      updateSlot(currentTargetSlot, { status: "Pause", location: "", type: "Übungsfahrt" });
+      updateSlot(currentTargetSlot, {
+        status: "Pause",
+        location: "",
+        type: "Übungsfahrt"
+      });
+
       document.getElementById('booking-modal').style.display = 'none';
     };
 
     document.getElementById('modal-reset-btn').onclick = () => {
-      updateSlot(currentTargetSlot, { status: "-", location: "", type: "Übungsfahrt" });
+      updateSlot(currentTargetSlot, {
+        status: "-",
+        location: "",
+        type: "Übungsfahrt"
+      });
+
       document.getElementById('booking-modal').style.display = 'none';
     };
 
     document.getElementById('modal-free-btn').onclick = () => {
-      updateSlot(currentTargetSlot, { status: "frei", location: "", type: "Übungsfahrt" });
+      updateSlot(currentTargetSlot, {
+        status: "frei",
+        location: "",
+        type: "Übungsfahrt"
+      });
+
       document.getElementById('booking-modal').style.display = 'none';
     };
 
